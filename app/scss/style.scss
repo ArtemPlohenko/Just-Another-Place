@@ -1,0 +1,20 @@
+@import 'vars';
+@import 'libs';
+@import 'fonts';
+@import 'global';
+@import 'media';
+
+.header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.home-intro_overlay {
+  position: absolute;
+  top: 0;
+  backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 100%;
+  width: 50%;
+}
