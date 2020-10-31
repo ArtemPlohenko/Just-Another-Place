@@ -1,2 +1,12 @@
+@media (max-width: 1440px) {}
+
+
 @media (max-width: 1440px) {
+  .list__grid__item {
+    grid-template-columns: 1fr 5fr 3fr;
+  }
+
+  .list__grid__title {
+    grid-template-columns: 1fr 5fr 3fr;
+  }
 }

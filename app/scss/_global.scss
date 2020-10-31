@@ -18,14 +18,31 @@ body {
   font-size: 16px;
   color: #ffffff;
   background-color: #808080;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   min-width: 320px;
+}
+
+#wrapper {
+  // text-transform: inherit;
+}
+
+header {
+  .container {
+    position: fixed;
+    z-index: 1;
+  }
+}
+
+.top-bar {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 a {
   display: inline-block;
   text-decoration: none;
-  color: #ffffff;
+  color: $darck;
 }
 
 ul,
@@ -38,11 +55,19 @@ li {
 .container {
   max-width: 1920px;
   margin: 0 auto;
+  color: $darck;
 }
+
 /////////////////////////
 
+.container {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 7vw;
+}
+
 .banner {
-  min-height: 1080px;
+  min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -50,13 +75,54 @@ li {
 
 .holder-banner {
   position: relative;
-  // &::after {
-  //   content: '';
-  //   position: absolute;
-  //   background-color: rgba(#000, 0.7);
-  //   top: 0;
-  //   left: 0;
-  //   right: 0;
-  //   bottom: 0;
-  // }
+}
+
+h1 {
+  line-height: 50px;
+  font-size: 43px;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent),
+    url(../img/mike-meyers.jpg) no-repeat;
+  -webkit-background-clip: text;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 200;
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/////////////////////////
+
+section {
+  position: relative;
+}
+
+.about,
+.services {
+  padding: 140px 0;
+  min-height: 100vh;
+}
+
+.about {
+  background: #fff;
+}
+
+.services {
+  background: $darck;
+}
+
+.list__grid__side-title {
+  a {
+    color: #fff;
+  }
 }

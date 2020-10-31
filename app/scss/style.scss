@@ -2,7 +2,10 @@
 @import 'libs';
 @import 'fonts';
 @import 'global';
+@import 'menu';
+@import 'services';
 @import 'media';
+
 
 .header {
   position: relative;
@@ -13,8 +16,49 @@
 .home-intro_overlay {
   position: absolute;
   top: 0;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(4px);
   background-color: rgba(0, 0, 0, 0.1);
   height: 100%;
   width: 50%;
+
+  .holder_overlay {
+    min-height: 100vh;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    top: 0;
+    padding: 45px 0;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.small-txt {
+  text-transform: none;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.btn {
+  margin-top: 60px;
+  position: relative;
+  display: inline-block;
+  color: $light-gray;
+}
+
+// About
+.textcolumn {
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+
+  &__title {
+    color: $light-gray;
+  }
+
+  &__text {
+    .subtitle {
+      display: block;
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
 }
